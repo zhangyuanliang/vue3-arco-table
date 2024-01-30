@@ -4,7 +4,7 @@ Table 和 Form 组件二次封装，技术栈：Vue3 + TypeScript + Arco-Design
 
 - 效果预览
 
-[Image text](https://photo.qihaikj.com/08100A10-0EB7-42DF-8027-270CA4E039C7.png) 
+![Image text](https://photo.qihaikj.com/08100A10-0EB7-42DF-8027-270CA4E039C7.png) 
 
 - 安装使用
 

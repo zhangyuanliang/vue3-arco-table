@@ -1,0 +1,51 @@
+{
+  "name": "vue3-arco-table",
+  "version": "0.0.9",
+  "description": "vue3封装的table+form组件库",
+  "private": false,
+  "scripts": {
+    "build": "vite build --config ./vite.config.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "arco-design/table-basic",
+    "arco-table",
+    "arco-design-table",
+    "vue3-arco-table",
+    "vue3 table"
+  ],
+  "files": [
+    "dist"
+  ],
+  "author": "zhangyuanliang",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhangyuanliang/vue3-arco-table"
+  },
+  "types": "./packages/table-basic/src/types/global.ts",
+  "main": "./dist/vue3-arco-table.umd.js",
+  "module": "./dist/vue3-arco-table.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue3-arco-table.es.js",
+      "require": "./dist/vue3-arco-table.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "devDependencies": {
+    "@arco-design/web-vue": "^2.54.3",
+    "@types/node": "^20.11.10",
+    "@vitejs/plugin-vue": "^5.0.3",
+    "less": "^4.2.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12",
+    "vite-plugin-dts": "^3.7.2",
+    "vue": "3.4.15"
+  },
+  "dependencies": {
+    "@vueuse/core": "^10.7.2",
+    "lodash-es": "^4.17.21",
+    "path": "^0.12.7"
+  }
+}

@@ -10,14 +10,14 @@ export default defineConfig({
   plugins: [vue()],
   build: {
     lib: {
-      entry: resolve(__dirname, 'packages/table-basic/index.ts'),
+      entry: resolve(__dirname, 'index.ts'),
       name: 'vue3-arco-table',
       fileName: format => `vue3-arco-table.${format}.js`
     },
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖
       external: ['vue', 'arco-design'],
-      input: resolve(__dirname, 'packages/table-basic/index.ts'),
+      input: resolve(__dirname, 'index.ts'),
       output: {
         // 在 UMD 构建模式下为这些外部化的依赖提供一个全局变量
         globals: {

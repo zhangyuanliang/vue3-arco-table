@@ -2,6 +2,8 @@
 
 Table 和 Form 组件二次封装，技术栈：Vue3 + TypeScript + Arco-Design + monorepo
 
+插件是在Arco-Design的基础上二次封装的，所以需要先安装Arco-Design，安装方法请参考[Arco-Design官网](https://arco.design/vue/docs/start)
+
 - 效果预览
 
 ![Image text](https://photo.qihaikj.com/example-img.png)

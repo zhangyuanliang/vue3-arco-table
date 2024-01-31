@@ -217,7 +217,7 @@ const buttonsRef = ref()
 const { height: buttonsHeight } = useElementSize(buttonsRef)
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 @import './assets/styles/global.less';
 @import './assets/styles/custom.less';
 
@@ -226,44 +226,44 @@ const { height: buttonsHeight } = useElementSize(buttonsRef)
   display: flex;
   flex-direction: column;
   background-color: var(--color-fill-2);
-}
-.panel {
-  padding: 16px 12px;
-  background-color: var(--color-bg-1);
-  &.table-panel {
-    margin-top: 14px;
+  .panel {
+    padding: 16px 12px;
+    background-color: var(--color-bg-1);
+    &.table-panel {
+      margin-top: 14px;
+      flex-grow: 1;
+    }
+  }
+  .form-item-list {
+    overflow: hidden;
+    &.up {
+      height: 0;
+      opacity: 0;
+      transition: height 0.3s ease-in-out;
+    }
+  }
+  .up-down-stripe {
+    width: 100%;
+    height: 14px;
+    border-top: 1px solid var(--color-border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(var(--primary-5));
+    cursor: pointer;
+    font-size: 12px;
+    &:hover {
+      border-color: rgb(var(--primary-5));
+      font-size: 14px;
+      transition: border-color 0.3s ease-in-out;
+    }
+  }
+  .arco-table-container {
     flex-grow: 1;
   }
-}
-.form-item-list {
-  overflow: hidden;
-  &.up {
-    height: 0;
-    opacity: 0;
-    transition: height 0.3s ease-in-out;
+  .operation-panel {
+    display: flex;
+    justify-content: flex-end;
   }
-}
-.up-down-stripe {
-  width: 100%;
-  height: 14px;
-  border-top: 1px solid var(--color-border);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgb(var(--primary-5));
-  cursor: pointer;
-  font-size: 12px;
-  &:hover {
-    border-color: rgb(var(--primary-5));
-    font-size: 14px;
-    transition: border-color 0.3s ease-in-out;
-  }
-}
-.arco-table-container {
-  flex-grow: 1;
-}
-.operation-panel {
-  display: flex;
-  justify-content: flex-end;
 }
 </style>

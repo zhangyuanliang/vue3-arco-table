@@ -3,7 +3,8 @@ import ArcoVueIcon from '@arco-design/web-vue/es/icon'
 import '@arco-design/web-vue/dist/arco.css';
 import { createApp } from 'vue'
 import App from './App.vue'
-import './mock'
+import '@/mock'
+import '@/assets/styles/global.less'
 
 const app = createApp(App)
 

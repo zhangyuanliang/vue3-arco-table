@@ -22,14 +22,14 @@ pnpm i vue3-arco-table
 
 - 插件使用
 
-``` vue
+``` ts
 import ArcoVue from '@arco-design/web-vue'
 import ArcoVueIcon from '@arco-design/web-vue/es/icon'
 import '@arco-design/web-vue/dist/arco.css';
 import { createApp } from 'vue'
 import App from './App.vue'
 
-<!-- 导入组件及css -->
+// 导入组件及css
 import TableBasic from 'vue3-arco-table'
 import 'vue3-arco-table/dist/style.css'
 
@@ -37,7 +37,7 @@ const app = createApp(App)
 
 app.use(ArcoVue, {})
 app.use(ArcoVueIcon)
-<!-- 全局组件注册 -->
+// 全局组件注册
 app.use(TableBasic)
 
 app.mount('#app')

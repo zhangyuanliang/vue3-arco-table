@@ -1,6 +1,6 @@
 {
   "name": "vue3-arco-table",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "vue3封装的table+form组件库",
   "private": false,
   "scripts": {

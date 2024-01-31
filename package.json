@@ -1,6 +1,6 @@
 {
   "name": "vue3-arco-table",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "description": "vue3封装的table+form组件库",
   "private": false,
   "scripts": {
@@ -11,11 +11,13 @@
     "arco-design/table-basic",
     "arco-table",
     "arco-design-table",
-    "vue3-arco-table",
-    "vue3 table"
+    "vue3-table",
+    "vue-table",
+    "vue3-arco-table"
   ],
   "files": [
-    "dist"
+    "dist",
+    "packages/table-basic/src/types"
   ],
   "author": "zhangyuanliang",
   "license": "MIT",
@@ -23,7 +25,7 @@
     "type": "git",
     "url": "https://github.com/zhangyuanliang/vue3-arco-table"
   },
-  "types": "./packages/table-basic/src/types/global.ts",
+  "types": "./packages/table-basic/src/types/vue3-arco-table.d.ts",
   "main": "./dist/vue3-arco-table.umd.js",
   "module": "./dist/vue3-arco-table.es.js",
   "exports": {

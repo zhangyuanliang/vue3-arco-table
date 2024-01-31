@@ -22,7 +22,7 @@ npm i vue3-arco-table
 
 - 组件使用
 
-```
+``` vue
 <template>
   <a-config-provider size="small">
     <div class="container">

@@ -3,4 +3,4 @@ import { withInstall } from '@arco-table/utils'
 
 const TableBasic = withInstall(tableBasic)
 
-export { TableBasic }
+export default TableBasic

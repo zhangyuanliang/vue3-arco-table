@@ -11,7 +11,7 @@ Table 和 Form 组件二次封装，技术栈：Vue3 + TypeScript + Arco-Design 
 - 安装使用
 
 ```bash
-npm i vue3-arco-table
+pnpm i vue3-arco-table
 ```
 
 - NodeJs

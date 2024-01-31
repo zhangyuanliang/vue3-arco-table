@@ -6,9 +6,13 @@ import App from './App.vue'
 import '@/mock'
 import '@/assets/styles/global.less'
 
+import TableBasic from 'vue3-arco-table'
+import 'vue3-arco-table/dist/style.css'
+
 const app = createApp(App)
 
 app.use(ArcoVue, {})
 app.use(ArcoVueIcon)
+app.use(TableBasic)
 
 app.mount('#app')

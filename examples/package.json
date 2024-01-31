@@ -14,10 +14,10 @@
   "author": "zhangyuanliang",
   "license": "MIT",
   "dependencies": {
-    "@arco-design/table-basic": "workspace:0.0.1",
     "axios": "^1.6.7",
     "path": "^0.12.7",
-    "query-string": "^8.1.0"
+    "query-string": "^8.1.0",
+    "vue3-arco-table": "workspace:^0.3.3"
   },
   "devDependencies": {
     "@types/lodash-es": "^4.17.12",

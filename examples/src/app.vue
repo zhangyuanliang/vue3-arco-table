@@ -17,7 +17,8 @@
               <a-input v-model="form.data.phone" placeholder="Please enter something" allow-clear />
             </a-form-item>
           </template> -->
-          <!-- buttons -->
+
+          <!-- buttons slot -->
           <template #buttons>
             <div class="btns-wrap">
               <div class="total-wrapper">
@@ -29,6 +30,7 @@
               </a-space>
             </div>
           </template>
+
           <!-- table slot -->
           <template #index="{ rowIndex }">{{ rowIndex + 1 }}</template>
           <template #operation="{ record }">
@@ -49,7 +51,6 @@ import { queryUserList, UserManagementRecord, UserManagementParams } from '@/api
 import { DEFAULT_PAGE_SIZE } from '@/utils/index'
 import useLoading from '@/hooks/loading'
 import { cloneDeep } from 'lodash-es'
-import { TableBasic } from '@arco-design/table-basic'
 
 const { loading, setLoading } = useLoading(false)
 

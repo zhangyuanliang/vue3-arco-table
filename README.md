@@ -8,7 +8,7 @@ Table 和 Form 组件二次封装，技术栈：Vue3 + TypeScript + Arco-Design 
 
 ![Image text](https://photo.qihaikj.com/example-img.png)
 
-- 安装使用
+- 安装
 
 ```bash
 pnpm i vue3-arco-table
@@ -20,46 +20,74 @@ pnpm i vue3-arco-table
 版本 >= 14.0.0
 ```
 
+- 插件使用
+
+``` vue
+import ArcoVue from '@arco-design/web-vue'
+import ArcoVueIcon from '@arco-design/web-vue/es/icon'
+import '@arco-design/web-vue/dist/arco.css';
+import { createApp } from 'vue'
+import App from './App.vue'
+
+<!-- 导入组件及css -->
+import TableBasic from 'vue3-arco-table'
+import 'vue3-arco-table/dist/style.css'
+
+const app = createApp(App)
+
+app.use(ArcoVue, {})
+app.use(ArcoVueIcon)
+<!-- 全局组件注册 -->
+app.use(TableBasic)
+
+app.mount('#app')
+
+```
+
 - 组件使用
 
 ``` vue
 <template>
   <a-config-provider size="small">
-    <div class="container">
-      <TableBasic
-        :form="form"
-        :form-data="form.data"
-        :table="table"
-        :loading="loading"
-        :scroll="{ x: 1400, y: '100%' }"
-        @fetch-data="fetchData"
-        @reset="reset"
-      >
-        <!-- form slot -->
-        <!-- <template #phone>
-          <a-form-item field="phone" label="号码">
-            <a-input v-model="form.data.phone" placeholder="Please enter something" allow-clear />
-          </a-form-item>
-        </template> -->
-        <!-- buttons -->
-        <template #buttons>
-          <div class="btns-wrap">
-            <div class="total-wrapper">
-              合计：
-              <span class="total-item">用户数: {{ table.pagination.total }}</span>
+    <div class="page-container">
+      <div class="container">
+        <TableBasic
+          :form="form"
+          :form-data="form.data"
+          :table="table"
+          :loading="loading"
+          :scroll="{ x: 1400, y: '100%' }"
+          @fetch-data="fetchData"
+          @reset="reset"
+        >
+          <!-- form slot -->
+          <!-- <template #phone>
+            <a-form-item field="phone" label="号码">
+              <a-input v-model="form.data.phone" placeholder="Please enter something" allow-clear />
+            </a-form-item>
+          </template> -->
+
+          <!-- buttons slot -->
+          <template #buttons>
+            <div class="btns-wrap">
+              <div class="total-wrapper">
+                合计：
+                <span class="total-item">用户数: {{ table.pagination.total }}</span>
+              </div>
+              <a-space>
+                <a-button type="outline">获取数据</a-button>
+              </a-space>
             </div>
-            <a-space>
-              <a-button type="outline">获取数据</a-button>
-            </a-space>
-          </div>
-        </template>
-        <!-- table slot -->
-        <template #index="{ rowIndex }">{{ rowIndex + 1 }}</template>
-        <template #operation="{ record }">
-          <a-link size="mini">修改</a-link>
-          <a-link size="mini">操作记录</a-link>
-        </template>
-      </TableBasic>
+          </template>
+
+          <!-- table slot -->
+          <template #index="{ rowIndex }">{{ rowIndex + 1 }}</template>
+          <template #operation="{ record }">
+            <a-link size="mini">修改</a-link>
+            <a-link size="mini">操作记录</a-link>
+          </template>
+        </TableBasic>
+      </div>
     </div>
   </a-config-provider>
 </template>
@@ -72,7 +100,6 @@ import { queryUserList, UserManagementRecord, UserManagementParams } from '@/api
 import { DEFAULT_PAGE_SIZE } from '@/utils/index'
 import useLoading from '@/hooks/loading'
 import { cloneDeep } from 'lodash-es'
-import { TableBasic } from '@arco-design/table-basic'
 
 const { loading, setLoading } = useLoading(false)
 
@@ -135,10 +162,14 @@ fetchData()
 </script>
 
 <style scoped>
+.page-container {
+  height: 100vh;
+  padding: 16px;
+  background-color: var(--color-fill-2);
+}
 .container {
   width: 100%;
-  height: 100vh;
-  background-color: var(--color-fill-2);
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -159,6 +190,7 @@ fetchData()
   }
 }
 </style>
+
 
 
 ```

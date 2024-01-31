@@ -31,7 +31,6 @@ importers:
 
   examples:
     specifiers:
-      '@arco-design/table-basic': workspace:0.0.1
       '@types/lodash-es': ^4.17.12
       '@types/mockjs': ^1.0.10
       axios: ^1.6.7
@@ -41,11 +40,12 @@ importers:
       query-string: ^8.1.0
       unplugin-auto-import: ^0.17.5
       unplugin-vue-components: ^0.26.0
+      vue3-arco-table: workspace:^0.3.3
     dependencies:
-      '@arco-design/table-basic': link:../packages/table-basic
       axios: 1.6.7
       path: 0.12.7
       query-string: 8.1.0
+      vue3-arco-table: link:../packages/table-basic
     devDependencies:
       '@types/lodash-es': 4.17.12
       '@types/mockjs': 1.0.10

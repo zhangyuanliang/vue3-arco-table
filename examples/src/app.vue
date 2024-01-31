@@ -25,7 +25,7 @@
                 <span class="total-item">用户数: {{ table.pagination.total }}</span>
               </div>
               <a-space>
-                <a-button type="outline">获取SPD数据</a-button>
+                <a-button type="outline">获取数据</a-button>
               </a-space>
             </div>
           </template>

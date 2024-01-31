@@ -1,10 +1,10 @@
 # vue3-arco-table
 
-Table 和 Form 组件二次封装，技术栈：Vue3 + TypeScript + Arco-Design
+Table 和 Form 组件二次封装，技术栈：Vue3 + TypeScript + Arco-Design + monorepo
 
 - 效果预览
 
-![Image text](https://photo.qihaikj.com/08100A10-0EB7-42DF-8027-270CA4E039C7.png) 
+![Image text](https://photo.qihaikj.com/example-img.png)
 
 - 安装使用
 
@@ -21,7 +21,6 @@ npm i vue3-arco-table
 - 组件使用
 
 ```
-
 <template>
   <a-config-provider size="small">
     <div class="container">
@@ -48,7 +47,7 @@ npm i vue3-arco-table
               <span class="total-item">用户数: {{ table.pagination.total }}</span>
             </div>
             <a-space>
-              <a-button type="outline">获取SPD数据</a-button>
+              <a-button type="outline">获取数据</a-button>
             </a-space>
           </div>
         </template>

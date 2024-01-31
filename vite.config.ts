@@ -2,46 +2,6 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'
 
-// export default defineConfig({
-//   resolve:{
-//     alias:{
-//       "@": resolve(__dirname,'./src'),
-//     }
-//   },
-//   build: {
-//     target: 'modules',
-//     outDir: 'dist',
-//     minify: false,
-//     rollupOptions: {
-//       external: ['vue'],
-//       input: ['./packages/table-basic/index.ts'],
-//       output: [
-//         {
-//           format: 'es',
-//           entryFileNames: '[name].js',
-//           preserveModules: true,
-//           dir: 'dist',
-//           preserveModulesRoot: 'src',
-//           globals: {
-//             vue: 'Vue'
-//           }
-//         },
-//       ],
-//     },
-//     lib: {
-//       entry: './packages/table-basic/index.ts',
-//     },
-//   },
-//   plugins: [vue()],
-//   css: {
-//     preprocessorOptions: {
-//       less: {
-//         javascriptEnabled: true,
-//       },
-//     },
-//   },
-// })
-
 export default defineConfig({
   base: './',
   server: {

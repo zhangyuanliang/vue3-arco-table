@@ -8,13 +8,14 @@ setupMock({
       return successResponse({
         rows: Array.from({ length: 50 }).map(() => ({
           id: mock('@id()'),
-          hospitalId: 'NJJBRMYY',
-          hospitalName: '南京江北医院',
-          nickName: '1',
-          phoneNumber: '15053163202',
-          roleNames: null,
           userId: '2023101115490846pkw3ubj',
           userName: '阿巴阿巴',
+          nickName: '张三',
+          hospitalId: 'NJJBRMYY',
+          hospitalName: '齐鲁医院',
+          phoneNumber: '15053163202',
+          roleNames: '管理员',
+          operateTime: '2024-01-21 10:11:18',
         })),
         total: 50,
       })

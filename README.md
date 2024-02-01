@@ -59,7 +59,7 @@ xxx.vue 代码
           :form-data="form.data"
           :table="table"
           :loading="loading"
-          :scroll="{ x: 1400, y: '100%' }"
+          :scroll="{ x: 1400, y: '100%' }" // TableBasic组件未声明接收的属性，如scroll会加载到 arco Table上
           @fetch-data="fetchData"
           @reset="reset"
         >
@@ -203,55 +203,56 @@ import type { TableColumnData } from '@arco-design/web-vue/es/table/interface'
 import { IFormConfig } from '@/types/global'
 
 export const formConfig: IFormConfig = {
-  quickSearch: true,
-  showExpand: true,
-  config: {},
-  style: {},
-  data: [],
-  list: [
+  quickSearch: true, // 是否显示快速查询
+  showExpand: true, // 是否展开搜索
+  config: {}, // arco design <form> Props
+  style: {}, // form style
+  data: [], // form data
+  list: [ // form 配置
     {
       type: 'select',
       key: 'hospitalId',
       label: '医院名称',
-      config: {},
-      options: [],
+      config: {}, // <form-item> Props
+      options: [], // select options
     },
     {
       type: 'input',
       key: 'userName',
       label: '登录名',
-      config: {},
+      config: {},  // <form-item> Props
     },
     {
       type: 'input',
       key: 'nickName',
       label: '用户名称',
-      config: {},
+      config: {},  // <form-item> Props
     },
     {
       type: 'select',
       key: 'role',
       label: '用户角色',
-      config: {},
-      options: [],
+      config: {},  // <form-item> Props
+      options: [], // select options
     },
     {
       type: 'input',
       key: 'phoneNumber',
       label: '手机号码',
-      config: {},
+      config: {},  // <form-item> Props
     },
     {
       type: 'dateRangePicker',
       key: 'updateTime',
       label: '操作时间',
-      config: {
+      config: {  // <form-item> Props
         showTime: true,
       },
     },
   ],
 }
 
+// 配置详见 arco design <table-column> Props 地址：https://arco.design/vue/component/table
 export const userManagementColumnData: TableColumnData[] = [
   {
     title: '序号',

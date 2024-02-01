@@ -8,13 +8,13 @@ setupMock({
       return successResponseWrap([
         {
           hospitalId: 'NJJBRMYY',
-          hospitalName: '南京江北医院',
+          hospitalName: '齐鲁医院',
           address: 'http://192.168.1.31:8098',
           newYn: 'Y',
         },
         {
           hospitalId: 'PJSRMYY',
-          hospitalName: '盘锦市中心医院',
+          hospitalName: '济南市中心医院',
           address: 'http://spd-supervise-xcx-review-feature-sp-jazj7f.gate.bjknrt.com',
           newYn: 'Y',
         },

@@ -4,6 +4,7 @@
   "description": "vue3封装的table+form组件库",
   "private": false,
   "scripts": {
+    "start": "npm run dev",
     "dev": "pnpm --dir ./examples dev",
     "build": "pnpm --dir ./packages/table-basic build",
     "test": "echo \"Error: no test specified\" && exit 1"

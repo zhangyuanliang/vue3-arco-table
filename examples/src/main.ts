@@ -5,6 +5,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import '@/mock'
 import '@/assets/styles/global.less'
+import '@/assets/styles/custom.less'
 
 import TableBasic from 'vue3-arco-table'
 import 'vue3-arco-table/dist/style.css'

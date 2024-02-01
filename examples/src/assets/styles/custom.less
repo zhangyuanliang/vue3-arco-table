@@ -30,21 +30,6 @@
       margin-bottom: 16px;
     }
   }
-  .arco-select-view,
-  .arco-input-wrapper,
-  .arco-form-item-content-wrapper .arco-textarea-wrapper,
-  .arco-picker.arco-picker-size-small,
-  .arco-select-view-single{
-    background-color: var(--color-bg-2)!important;
-    border: 1px solid var(--color-border)!important;
-    &:hover {
-      background-color: var(--color-bg-2);
-      border-color: rgb(var(--primary-5));
-    }
-    input::placeholder {
-      font-size: 13px;
-    }
-  }
   
   .role-add-modal .arco-modal-body {
     padding: 24px 0px 24px 20px !important;
@@ -60,5 +45,21 @@
   .arco-scrollbar-thumb-direction-vertical .arco-scrollbar-thumb-bar {
     width: 6px!important;
     margin: 0px 3px 0 6px!important;
+  }
+}
+
+.arco-select-view,
+.arco-input-wrapper,
+.arco-textarea-wrapper,
+.arco-picker-size-small,
+.arco-select-view-single {
+  background-color: #fff!important;
+  border: 1px solid var(--color-border)!important;
+  &:hover {
+    background-color: var(--color-bg-2);
+    border-color: rgb(var(--primary-5));
+  }
+  input::placeholder {
+    font-size: 13px;
   }
 }

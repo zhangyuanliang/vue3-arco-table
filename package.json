@@ -1,6 +1,6 @@
 {
-  "name": "vue3-arco-table-next",
-  "version": "0.2.1",
+  "name": "vue3-table-next",
+  "version": "0.3.6",
   "description": "vue3封装的table+form组件库",
   "private": false,
   "scripts": {
@@ -8,12 +8,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "arco-design/table-basic",
+    "vue3-arco-table",
     "arco-table",
     "arco-design-table",
     "vue3-table",
-    "vue-table",
-    "vue3-arco-table"
+    "vue-table"
   ],
   "files": [
     "dist",
@@ -25,7 +24,7 @@
     "type": "git",
     "url": "https://github.com/zhangyuanliang/vue3-arco-table"
   },
-  "types": "./packages/table-basic/src/types/vue3-arco-table.d.ts",
+  "types": "packages/table-basic/types/vue3-arco-table.d.ts",
   "main": "./dist/vue3-arco-table.umd.js",
   "module": "./dist/vue3-arco-table.es.js",
   "exports": {
@@ -40,14 +39,12 @@
     "@types/node": "^20.11.10",
     "@vitejs/plugin-vue": "^5.0.3",
     "less": "^4.2.0",
+    "path": "^0.12.7",
     "typescript": "^5.3.3",
     "vite": "^5.0.12",
-    "vite-plugin-dts": "^3.7.2",
     "vue": "3.4.15"
   },
   "dependencies": {
-    "@vueuse/core": "^10.7.2",
-    "lodash-es": "^4.17.21",
-    "path": "^0.12.7"
+    "@vueuse/core": "^10.7.2"
   }
 }

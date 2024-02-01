@@ -219,7 +219,6 @@ const { height: buttonsHeight } = useElementSize(buttonsRef)
 
 <style lang="less" scoped>
 @import './assets/styles/global.less';
-@import './assets/styles/custom.less';
 .arco-select-view-single {
   background-color: #fff!important;
   border: 1px solid var(--color-border)!important;

@@ -4,35 +4,15 @@
   "description": "vue3封装的table+form组件库",
   "private": false,
   "scripts": {
-    "build": "pnpm vite build --config ./vite.config.ts",
+    "dev": "pnpm --dir ./examples dev",
+    "build": "pnpm --dir ./packages/table-basic build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "vue3-arco-table",
-    "arco-table",
-    "arco-design-table",
-    "vue3-table",
-    "vue-table"
-  ],
-  "files": [
-    "dist",
-    "packages/table-basic/src/types"
-  ],
   "author": "zhangyuanliang",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/zhangyuanliang/vue3-arco-table"
-  },
-  "types": "packages/table-basic/types/vue3-arco-table.d.ts",
-  "main": "./dist/vue3-arco-table.umd.js",
-  "module": "./dist/vue3-arco-table.es.js",
-  "exports": {
-    ".": {
-      "import": "./dist/vue3-arco-table.es.js",
-      "require": "./dist/vue3-arco-table.umd.js"
-    },
-    "./dist/style.css": "./dist/style.css"
   },
   "devDependencies": {
     "@arco-design/web-vue": "^2.54.3",

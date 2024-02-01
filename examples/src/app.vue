@@ -47,13 +47,15 @@
 <script setup lang="ts">
 import { userManagementColumnData, formConfig } from '@/data'
 import type { TableConfig } from '@/types/global'
-import { reactive } from 'vue'
+import { reactive, onMounted, computed } from 'vue'
 import { queryUserList, UserManagementRecord, UserManagementParams } from '@/api/user-management'
 import { DEFAULT_PAGE_SIZE } from '@/utils/index'
 import useLoading from '@/hooks/loading'
 import { cloneDeep } from 'lodash-es'
+import { useDictionaryStore } from '@/store'
 
 const { loading, setLoading } = useLoading(false)
+const dictionaryStore = useDictionaryStore()
 
 const generateFormModel = () => {
   return {
@@ -111,6 +113,13 @@ const reset = () => {
 }
 
 fetchData()
+
+const hospitalIndex = computed(() => form.list.findIndex(item => item.key === 'hospitalId'))
+
+onMounted(async () => {
+  await dictionaryStore.getHospitalList()
+  form.list[hospitalIndex.value].options = dictionaryStore.hospitalList
+})
 </script>
 
 <style scoped>

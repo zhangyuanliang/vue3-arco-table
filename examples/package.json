@@ -14,9 +14,10 @@
   "author": "zhangyuanliang",
   "license": "MIT",
   "dependencies": {
-    "axios": "^1.6.7",
+    "axios": "^0.24.0",
     "lodash-es": "^4.17.21",
     "path": "^0.12.7",
+    "pinia": "^2.1.7",
     "query-string": "^8.1.0",
     "vue3-arco-table": "workspace:^0.3.6"
   },

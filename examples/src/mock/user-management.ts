@@ -1,11 +1,11 @@
 import { mock } from 'mockjs'
-import setupMock, { successResponseWrap, successResponse } from '@/utils/setup-mock'
+import setupMock, { successResponseWrap } from '@/utils/setup-mock'
 
 setupMock({
   mock: true,
   setup: () => {
     mock(new RegExp('/dev-api/supervise-manager-api/externalUser/getList.do'), () => {
-      return successResponse({
+      return successResponseWrap({
         rows: Array.from({ length: 50 }).map(() => ({
           id: mock('@id()'),
           userId: '2023101115490846pkw3ubj',

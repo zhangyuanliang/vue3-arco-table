@@ -20,6 +20,7 @@ pnpm i vue3-arco-table
 版本 >= 14.0.0
 ```
 
+>
 >插件使用可查看example下的代码，以下是关键部分
 
 - 插件使用
@@ -325,4 +326,5 @@ export const userManagementColumnData: TableColumnData[] = [
 
 ```
 
+>
 >注：优秀的程序员不是写天花乱坠的代码，让人难以理解，而是写让人一看就懂的代码。有写的不妥的地方，欢迎大家批评指正。邮箱：sailing.yuanliang@gmail.com

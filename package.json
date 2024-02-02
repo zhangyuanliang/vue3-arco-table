@@ -1,8 +1,7 @@
 {
-  "name": "vue3-table-next",
-  "version": "0.3.6",
-  "description": "vue3封装的table+form组件库",
-  "private": false,
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
   "scripts": {
     "start": "npm run dev",
     "dev": "pnpm --dir ./examples dev",

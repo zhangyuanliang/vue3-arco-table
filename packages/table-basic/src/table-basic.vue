@@ -1,8 +1,7 @@
 <template>
   <div class="table-basic-wrapper">
-    <div ref="formPanelRef" class="panel padding-b-0">
+    <div ref="formPanelRef" v-if="Object.keys(form).length > 0" class="panel padding-b-0">
       <a-form
-        v-if="Object.keys(form).length > 0"
         :model="formModel"
         :label-col-props="{ span: 8 }"
         :wrapper-col-props="{ span: 16 }"

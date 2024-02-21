@@ -3,9 +3,9 @@
   "description": "",
   "private": true,
   "scripts": {
-    "start": "npm run dev",
-    "dev": "pnpm --dir ./examples dev",
-    "build": "pnpm --dir ./packages/table-basic build",
+    "start": "yarn run dev",
+    "dev": "yarn workspace @vue3-arco-table/examples run dev",
+    "build": "yarn workspace vue3-arco-table run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "zhangyuanliang",
@@ -14,6 +14,10 @@
     "type": "git",
     "url": "https://github.com/zhangyuanliang/vue3-arco-table"
   },
+  "workspaces": [
+    "packages/*",
+    "examples"
+  ],
   "devDependencies": {
     "@arco-design/web-vue": "^2.54.3",
     "@types/node": "^20.11.10",

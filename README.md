@@ -125,31 +125,7 @@ const form = reactive<IFormConfig>({
       config: {}, // <form-item> Props
       options: [], // select options
     },
-    {
-      type: 'input',
-      key: 'userName',
-      label: '登录名',
-      config: {},  // <form-item> Props
-    },
-    {
-      type: 'input',
-      key: 'nickName',
-      label: '用户名称',
-      config: {},  // <form-item> Props
-    },
-    {
-      type: 'select',
-      key: 'role',
-      label: '用户角色',
-      config: {},  // <form-item> Props
-      options: [], // select options
-    },
-    {
-      type: 'input',
-      key: 'phoneNumber',
-      label: '手机号码',
-      config: {},  // <form-item> Props
-    },
+    ...,
     {
       type: 'dateRangePicker',
       key: 'updateTime',
@@ -180,42 +156,7 @@ const table = reactive<TableConfig<UserManagementRecord>>({
         sortDirections: ['ascend', 'descend'],
       },
     },
-    {
-      title: '用户姓名',
-      dataIndex: 'nickName',
-      ellipsis: true,
-      tooltip: true,
-      sortable: {
-        sortDirections: ['ascend', 'descend'],
-      },
-    },
-    {
-      title: '医院名称',
-      dataIndex: 'hospitalName',
-      ellipsis: true,
-      tooltip: true,
-      sortable: {
-        sortDirections: ['ascend', 'descend'],
-      },
-    },
-    {
-      title: '手机号',
-      dataIndex: 'phoneNumber',
-      ellipsis: true,
-      tooltip: true,
-      sortable: {
-        sortDirections: ['ascend', 'descend'],
-      },
-    },
-    {
-      title: '操作时间',
-      dataIndex: 'operateTime',
-      ellipsis: true,
-      tooltip: true,
-      sortable: {
-        sortDirections: ['ascend', 'descend'],
-      },
-    },
+    ...,
     {
       title: '操作',
       slotName: 'operation',

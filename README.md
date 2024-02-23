@@ -233,11 +233,11 @@ fetchData()
 
 ```bash
 // 项目根目录下
-pnpm install
+yarn
 
-pnpm run build
+yarn build
 
-pnpm run dev
+yarn dev
 ```
 
 >

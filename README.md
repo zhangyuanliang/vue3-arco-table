@@ -229,6 +229,17 @@ fetchData()
 
 ```
 
+## 项目启动
+
+```bash
+// 项目根目录下
+pnpm install
+
+pnpm run build
+
+pnpm run dev
+```
+
 >
 >注：优秀的程序员不是写天花乱坠的代码，让人难以理解，而是写让人一看就懂的代码。
 >有写的不妥的地方，欢迎大家批评指正。邮箱：sailing.yuanliang@gmail.com

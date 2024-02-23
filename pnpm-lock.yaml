@@ -38,7 +38,7 @@ importers:
       query-string: ^8.1.0
       unplugin-auto-import: ^0.17.5
       unplugin-vue-components: ^0.26.0
-      vue3-arco-table: ^0.5.2
+      vue3-arco-table: workspace:*
     dependencies:
       axios: 0.24.0
       lodash-es: 4.17.21

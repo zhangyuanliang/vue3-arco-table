@@ -1190,11 +1190,6 @@ vue-demi@>=0.14.5, vue-demi@>=0.14.7:
   resolved "https://registry.npmjs.org/vue-demi/-/vue-demi-0.14.7.tgz#8317536b3ef74c5b09f268f7782e70194567d8f2"
   integrity sha512-EOG8KXDQNwkJILkx/gPcoL/7vH+hORoBaKgGe+6W7VFMvCYJfmF2dGbvgDroVnI8LU7/kTu8mbjRZGBU1z9NTA==
 
-"vue3-arco-table@workspace:*":
-  version "0.4.1"
-  resolved "https://registry.npmjs.org/vue3-arco-table/-/vue3-arco-table-0.4.1.tgz#78b53f32c7e7c91fede74137fabb9c2e9564a3a2"
-  integrity sha512-FJGz0BwZX53hJ8btbv4lO/q+3qNMA8FIYMBYZaktsv2V2A5JLLFsINs1Mfk9OH1U7zjgh94pPrXLodiYiCEmIw==
-
 vue@3.4.15:
   version "3.4.15"
   resolved "https://registry.npmjs.org/vue/-/vue-3.4.15.tgz#91f979844ffca9239dff622ba4c79c5d5524b88c"

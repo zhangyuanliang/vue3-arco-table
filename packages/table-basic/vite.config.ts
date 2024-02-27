@@ -7,7 +7,9 @@ export default defineConfig({
   server: {
     host: true,
   },
-  plugins: [vue()],
+  plugins: [
+    vue(),
+  ],
   build: {
     lib: {
       entry: resolve(__dirname, 'index.ts'),

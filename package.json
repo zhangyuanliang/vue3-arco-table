@@ -3,11 +3,15 @@
   "description": "",
   "private": true,
   "scripts": {
-    "start": "npm run dev",
-    "dev": "pnpm --dir ./examples dev",
+    "start": "pnpm run dev",
+    "dev": "pnpm -C examples dev",
     "build": "pnpm -r --filter=./packages/* build",
     "clean": "rimraf ./packages/table-basic/dist",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "packageManager": "pnpm@7.30.0",
+  "engines": {
+    "node": ">=16"
   },
   "author": "zhangyuanliang",
   "license": "MIT",

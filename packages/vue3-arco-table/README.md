@@ -20,7 +20,7 @@ npm i vue3-arco-table
 版本 >= 14.0.0
 ```
 
-插件使用可查看源码 example 下的代码，以下是关键部分
+插件使用可查看源码 playground 下的代码，以下是关键部分
 
 main.ts 代码
 

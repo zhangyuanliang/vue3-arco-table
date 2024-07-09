@@ -9,13 +9,13 @@ import '@/mock'
 import '@/assets/styles/global.less'
 import '@/assets/styles/custom.less'
 
-import Vue3ArcoTable from 'vue3-arco-table'
+// import Vue3ArcoTable from 'vue3-arco-table'
 
 const app = createApp(App)
 
 app.use(store)
 app.use(ArcoVue, {})
 app.use(ArcoVueIcon)
-app.use(Vue3ArcoTable)
+// app.use(Vue3ArcoTable)
 
 app.mount('#app')

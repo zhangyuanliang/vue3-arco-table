@@ -24,12 +24,12 @@ export default defineConfig({
     },
     outDir: 'dist',
     rollupOptions: {
-      external: ['vue', 'arco-design'],
+      external: ['vue', '@arco-design'],
       output: {
         exports: 'named',
         globals: {
           vue: 'Vue',
-          'arco-design': 'ArcoDesign',
+          '@arco-design': 'ArcoDesign',
         },
       },
     },

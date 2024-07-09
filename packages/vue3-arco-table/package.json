@@ -1,8 +1,8 @@
 {
   "name": "vue3-arco-table",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "license": "MIT",
-  "description": "A simple form+table component for Vue 3",
+  "description": "A simple form+table component for Vue3",
   "author": "https://github.com/zhangyuanliang",
   "type": "module",
   "scripts": {
@@ -34,7 +34,7 @@
       "require": "./dist/vue3-arco-table.cjs"
     }
   },
-  "dependencies": {
+  "peerDependencies": {
     "@vueuse/core": "^10.11.0",
     "vue": "^3.4.29"
   },

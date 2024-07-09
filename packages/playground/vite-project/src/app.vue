@@ -53,6 +53,7 @@ import { DEFAULT_PAGE_SIZE } from '@/utils/index'
 import useLoading from '@/hooks/loading'
 import { cloneDeep } from 'lodash-es'
 import { useDictionaryStore } from '@/store'
+import { Vue3ArcoTable } from 'vue3-arco-table'
 
 const { loading, setLoading } = useLoading(false)
 const dictionaryStore = useDictionaryStore()

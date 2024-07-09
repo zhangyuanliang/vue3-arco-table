@@ -1,7 +1,9 @@
 {
   "name": "vue3-arco-table",
-  "private": true,
-  "version": "0.6.0",
+  "version": "0.6.1",
+  "license": "MIT",
+  "description": "A simple form+table component for Vue 3",
+  "author": "https://github.com/zhangyuanliang",
   "type": "module",
   "scripts": {
     "dev": "vite build --watch",

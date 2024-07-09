@@ -1,5 +1,5 @@
 {
-  "name": "@vue3-arco-table/examples",
+  "name": "vite-project",
   "version": "0.0.1",
   "description": "arco-table使用实例",
   "main": "index.js",

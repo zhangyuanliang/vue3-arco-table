@@ -2,7 +2,8 @@
   "name": "vue3-arco-table-monorepo",
   "private": "true",
   "scripts": {
-    "build": "pnpm build --filter vue3-arco-table"
+    "build": "pnpm --filter vue3-arco-table run build",
+    "dev": "pnpm --filter vite-project run dev"
   },
   "dependencies": {
     "prettier": "2.8.8"

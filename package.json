@@ -1,35 +1,10 @@
 {
-  "version": "0.0.1",
-  "description": "",
-  "private": true,
+  "name": "vue3-arco-table-monorepo",
+  "private": "true",
   "scripts": {
-    "start": "pnpm run dev",
-    "dev": "pnpm -C examples dev",
-    "build": "pnpm -r --filter=./packages/* build",
-    "clean": "rimraf ./packages/table-basic/dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "packageManager": "pnpm@7.30.0",
-  "engines": {
-    "node": ">=16"
-  },
-  "author": "zhangyuanliang",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/zhangyuanliang/vue3-arco-table"
-  },
-  "devDependencies": {
-    "@arco-design/web-vue": "^2.54.3",
-    "@types/node": "^20.11.10",
-    "@vitejs/plugin-vue": "^5.0.3",
-    "less": "^4.2.0",
-    "path": "^0.12.7",
-    "typescript": "^5.3.3",
-    "vite": "^5.0.12",
-    "vue": "3.4.15"
+    "build": "pnpm build --filter vue3-arco-table"
   },
   "dependencies": {
-    "@vueuse/core": "^10.7.2"
+    "prettier": "2.8.8"
   }
 }

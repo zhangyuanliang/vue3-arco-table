@@ -1,0 +1,50 @@
+{
+  "name": "vue3-arco-table",
+  "private": true,
+  "version": "0.6.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "dev:build": "vite build && tsc -d --emitDeclarationOnly && vue-typegen gen -s ./src -o ./dist",
+    "prepublishOnly": "npm run build",
+    "lint": "eslint \"{packages,playground}/**/*.{ts,tsx,vue,js,jsx,html}\"",
+    "prettier": "npx prettier --write ."
+  },
+  "files": [
+    "dist/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhangyuanliang/vue3-arco-table.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "main": "dist/vue3-arco-table.cjs",
+  "module": "dist/vue3-arco-table.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/vue3-arco-table.js",
+      "require": "./dist/vue3-arco-table.cjs"
+    }
+  },
+  "dependencies": {
+    "@vueuse/core": "^10.11.0",
+    "vue": "^3.4.29"
+  },
+  "devDependencies": {
+    "@arco-design/web-vue": "^2.55.3",
+    "@types/node": "^20.14.10",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.1",
+    "vite-plugin-css-injected-by-js": "^3.5.1",
+    "vite-plugin-dts": "^3.9.1",
+    "vite-plugin-vue-type-imports": "^0.2.5",
+    "vue-tsc": "^2.0.21"
+  }
+}

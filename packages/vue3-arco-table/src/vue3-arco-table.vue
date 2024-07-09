@@ -137,11 +137,11 @@
 
 <script lang="ts" setup>
 import { useVModel, useElementSize } from '@vueuse/core'
-import { Pagination } from './types/global'
+import { Pagination } from './types'
 import { ref, computed } from 'vue'
 
 defineOptions({
-  name: 'TableBasic',
+  name: 'Vue3ArcoTable',
 })
 
 const props = defineProps({
@@ -216,55 +216,133 @@ const buttonsRef = ref()
 const { height: buttonsHeight } = useElementSize(buttonsRef)
 </script>
 
-<style lang="less" scoped>
-@import './assets/styles/global.less';
+<style>
 .arco-select-view-single {
   background-color: #fff!important;
   border: 1px solid var(--color-border)!important;
 }
+
 .table-basic-wrapper {
   height: 100%;
   display: flex;
   flex-direction: column;
   background-color: var(--color-fill-2);
-  .panel {
-    padding: 16px 12px;
-    background-color: var(--color-bg-1);
-    &.table-panel {
-      margin-top: 14px;
-      flex-grow: 1;
-    }
-  }
-  .form-item-list {
-    overflow: hidden;
-    &.up {
-      height: 0;
-      opacity: 0;
-      transition: height 0.3s ease-in-out;
-    }
-  }
-  .up-down-stripe {
-    width: 100%;
-    height: 14px;
-    border-top: 1px solid var(--color-border);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(var(--primary-5));
-    cursor: pointer;
-    font-size: 12px;
-    &:hover {
-      border-color: rgb(var(--primary-5));
-      font-size: 14px;
-      transition: border-color 0.3s ease-in-out;
-    }
-  }
-  .arco-table-container {
-    flex-grow: 1;
-  }
-  .operation-panel {
-    display: flex;
-    justify-content: flex-end;
-  }
+}
+
+.table-basic-wrapper .panel {
+  padding: 16px 12px;
+  background-color: var(--color-bg-1);
+}
+
+.table-basic-wrapper .panel.table-panel {
+  margin-top: 14px;
+  flex-grow: 1;
+}
+
+.table-basic-wrapper .form-item-list {
+  overflow: hidden;
+}
+
+.form-item-list.up {
+  height: 0;
+  opacity: 0;
+  transition: height 0.3s ease-in-out;
+}
+
+.table-basic-wrapper .up-down-stripe {
+  width: 100%;
+  height: 14px;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(var(--primary-5));
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.up-down-stripe:hover {
+  border-color: rgb(var(--primary-5));
+  font-size: 14px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.table-basic-wrapper .arco-table-container {
+  flex-grow: 1;
+}
+
+.table-basic-wrapper .operation-panel {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.margin-t-12 {
+  margin-top: 12px;
+}
+
+.margin-t-14 {
+  margin-top: 14px;
+}
+
+.margin-t-16 {
+  margin-top: 16px;
+}
+
+.margin-l-14 {
+  margin-left: 14px;
+}
+
+.padding-b-0 {
+  padding-bottom: 0!important;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-c {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-v {
+  display: flex;
+  align-items: center;
+}
+
+.flex-b {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-bv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-e {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-g {
+  display: flex;
+  flex-grow: 1;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.height-100 {
+  height: 100%;
 }
 </style>

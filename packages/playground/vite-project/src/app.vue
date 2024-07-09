@@ -2,7 +2,7 @@
   <a-config-provider size="small">
     <div class="page-container">
       <div class="container">
-        <TableBasic
+        <Vue3ArcoTable
           :form="form"
           :form-data="form.data"
           :table="table"
@@ -38,7 +38,7 @@
             <a-link size="mini">修改</a-link>
             <a-link size="mini">操作记录</a-link>
           </template>
-        </TableBasic>
+        </Vue3ArcoTable>
       </div>
     </div>
   </a-config-provider>

@@ -29,13 +29,12 @@ import { createApp } from 'vue'
 import App from './App.vue'
 
 // 导入组件及css
-import TableBasic from 'vue3-arco-table'
-// import 'vue3-arco-table/dist/style.css' // 0.6.0及以上版本无需再引入
+import Vue3ArcoTable from 'vue3-arco-table'
 
 const app = createApp(App)
 
 // 全局组件注册
-app.use(TableBasic)
+app.use(Vue3ArcoTable) // 可以修改组件名称 app.use(Vue3ArcoTable, { name: 'xxx'})
 
 app.mount('#app')
 
@@ -48,12 +47,12 @@ xxx.vue 代码
   <a-config-provider size="small">
     <div class="page-container">
       <div class="container">
-        <TableBasic
+        <Vue3ArcoTable
           :form="form"
           :form-data="form.data"
           :table="table"
           :loading="loading"
-          :scroll="{ x: 1400, y: '100%' }" // TableBasic组件未声明接收的属性，如scroll会加载到 arco Table上
+          :scroll="{ x: 1400, y: '100%' }" // Vue3ArcoTable组件未声明接收的属性，如scroll会加载到 arco Table上
           @fetch-data="fetchData"
           @reset="reset"
         >
@@ -83,7 +82,7 @@ xxx.vue 代码
             <a-link size="mini">修改</a-link>
             <a-link size="mini">操作记录</a-link>
           </template>
-        </TableBasic>
+        </Vue3ArcoTable>
       </div>
     </div>
   </a-config-provider>

@@ -1,17 +1,17 @@
 {
-  "name": "@vue3-arco-table/examples",
+  "name": "vite-project",
   "version": "0.0.1",
-  "description": "arco-table使用实例",
+  "description": "vue3-arco-table使用Demo",
   "main": "index.js",
   "type": "module",
   "private": false,
   "scripts": {
-    "dev": "yarn vite",
-    "start": "yarn vite",
+    "dev": "pnpm vite",
+    "start": "pnpm vite",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "zhangyuanliang",
+  "author": "https://github.com/zhangyuanliang",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.24.0",
@@ -19,12 +19,14 @@
     "path": "^0.12.7",
     "pinia": "^2.1.7",
     "query-string": "^8.1.0",
-    "vue3-arco-table": "^0.5.2"
+    "vue3-arco-table": "workspace:*"
   },
   "devDependencies": {
+    "@arco-design/web-vue": "^2.55.3",
     "@types/lodash-es": "^4.17.12",
     "@types/mockjs": "^1.0.10",
     "cross-env": "^7.0.3",
+    "less": "^4.2.0",
     "mockjs": "^1.1.0",
     "unplugin-auto-import": "^0.17.5",
     "unplugin-vue-components": "^0.26.0"

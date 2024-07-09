@@ -1,7 +1,7 @@
 {
   "name": "vite-project",
   "version": "0.0.1",
-  "description": "arco-table使用实例",
+  "description": "vue3-arco-table使用Demo",
   "main": "index.js",
   "type": "module",
   "private": false,
@@ -11,7 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "zhangyuanliang",
+  "author": "https://github.com/zhangyuanliang",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.24.0",

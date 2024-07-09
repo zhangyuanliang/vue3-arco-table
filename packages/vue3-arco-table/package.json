@@ -48,5 +48,18 @@
     "vite-plugin-dts": "^3.9.1",
     "vite-plugin-vue-type-imports": "^0.2.5",
     "vue-tsc": "^2.0.21"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/zhangyuanliang/vue3-arco-table/issues",
+    "email": "sailing.yuanliang@gmail.com"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "homepage": "https://github.com/zhangyuanliang/vue3-arco-table",
+  "keywords": [
+    "vue3",
+    "vue3-table",
+    "vue3-arco-table"
+  ]
 }

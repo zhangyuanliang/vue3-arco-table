@@ -137,11 +137,11 @@ const reset = () => {
 
 ```bash
 // 项目根目录下
-npm install
+pnpm install
 
-npm run build
+pnpm run build
 
-npm run dev
+pnpm run dev
 ```
 
 >

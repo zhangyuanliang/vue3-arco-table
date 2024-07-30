@@ -217,11 +217,6 @@ const { height: buttonsHeight } = useElementSize(buttonsRef)
 </script>
 
 <style>
-.arco-select-view-single {
-  background-color: #fff!important;
-  border: 1px solid var(--color-border)!important;
-}
-
 .table-basic-wrapper {
   height: 100%;
   display: flex;

@@ -6,8 +6,8 @@
   "type": "module",
   "private": false,
   "scripts": {
-    "dev": "pnpm vite",
-    "start": "pnpm vite",
+    "dev": "vite",
+    "start": "vite",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

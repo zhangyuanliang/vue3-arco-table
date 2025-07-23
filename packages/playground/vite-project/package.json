@@ -15,11 +15,13 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.24.0",
+    "dompurify": "^3.2.6",
     "lodash-es": "^4.17.21",
+    "marked": "^16.1.1",
+    "mermaid": "^11.9.0",
     "path": "^0.12.7",
     "pinia": "^2.1.7",
-    "query-string": "^8.1.0",
-    "vue3-arco-table": "workspace:*"
+    "query-string": "^8.1.0"
   },
   "devDependencies": {
     "@arco-design/web-vue": "^2.55.3",

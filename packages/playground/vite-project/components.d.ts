@@ -8,19 +8,9 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     AButton: typeof import('@arco-design/web-vue')['Button']
-    ACol: typeof import('@arco-design/web-vue')['Col']
     AConfigProvider: typeof import('@arco-design/web-vue')['ConfigProvider']
-    ADatePicker: typeof import('@arco-design/web-vue')['DatePicker']
-    ADivider: typeof import('@arco-design/web-vue')['Divider']
-    AForm: typeof import('@arco-design/web-vue')['Form']
-    AFormItem: typeof import('@arco-design/web-vue')['FormItem']
-    AInput: typeof import('@arco-design/web-vue')['Input']
     ALink: typeof import('@arco-design/web-vue')['Link']
-    AOption: typeof import('@arco-design/web-vue')['Option']
-    ARangePicker: typeof import('@arco-design/web-vue')['RangePicker']
-    ARow: typeof import('@arco-design/web-vue')['Row']
-    ASelect: typeof import('@arco-design/web-vue')['Select']
     ASpace: typeof import('@arco-design/web-vue')['Space']
-    ATable: typeof import('@arco-design/web-vue')['Table']
+    SSERenderer: typeof import('./src/components/SSERenderer.vue')['default']
   }
 }

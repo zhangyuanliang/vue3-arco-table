@@ -87,8 +87,14 @@ const canAttemptRender = (code: string) => {
 
 // 渲染 Mermaid 图表
 const renderMermaid = async () => {
-  if (!props.mermaidCode || !mermaidRef.value) {
+  if (!props.mermaidCode) {
     isLoading.value = false
+    return
+  }
+  
+  if (!mermaidRef.value) {
+    // 如果DOM还没准备好，稍后重试
+    setTimeout(() => renderMermaid(), 50)
     return
   }
   

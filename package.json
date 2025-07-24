@@ -3,7 +3,8 @@
   "private": "true",
   "scripts": {
     "build": "pnpm --filter vue3-arco-table run build",
-    "dev": "pnpm --filter vite-project run dev"
+    "dev": "pnpm --filter vite-project run dev",
+    "serve": "pnpm --filter serve-project run serve"
   },
   "dependencies": {
     "prettier": "2.8.8"

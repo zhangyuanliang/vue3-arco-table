@@ -11,6 +11,9 @@ declare module 'vue' {
     AConfigProvider: typeof import('@arco-design/web-vue')['ConfigProvider']
     ALink: typeof import('@arco-design/web-vue')['Link']
     ASpace: typeof import('@arco-design/web-vue')['Space']
+    MermaidRender: typeof import('./src/components/mermaid-render.vue')['default']
+    MermaidRenderer: typeof import('./src/components/mermaid-renderer.vue')['default']
+    MermaidRendererNext: typeof import('./src/components/mermaid-renderer-next.vue')['default']
     SSERenderer: typeof import('./src/components/SSERenderer.vue')['default']
   }
 }

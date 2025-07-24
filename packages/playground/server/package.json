@@ -1,9 +1,9 @@
 {
-    "name": "server-project",
+    "name": "serve-project",
+    "version": "1.0.0",
     "scripts": {
-        "start": "node app.js",
-        "build": "tsc",
-        "serve": "node dist/app.js"
+        "serve": "node app.js",
+        "build": "tsc"
     },
     "dependencies": {
         "@types/express": "^5.0.3",
